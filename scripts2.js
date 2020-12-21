@@ -46,7 +46,7 @@ alert(sum);
 
 // 6
 let random;
-for (i = 0; true ; i++) {
+for (let i = 0; true ; i++) {
     random = Math.random();
     if (random > 0.9) {
         alert(random);
@@ -58,7 +58,7 @@ for (i = 0; true ; i++) {
 
 
 // 7
-for (i = 1; i <= 10; i++) {
+for (let i = 1; i <= 10; i++) {
     for (j = 1; j <= 10; j++) {
         console.log(`${i} * ${j} = ${i * j}`);
     }
@@ -81,7 +81,7 @@ for (i = 1; i <= 10; i++) {
 
 // 9
 let sum = 0;
-for (i = 0; true; i++){
+for (let i = 0; true; i++){
     let number = prompt("Введите число");
     sum = sum + +number;
     if (number === null) {
@@ -113,7 +113,7 @@ for (; ;) {
 
 // 11
 
-for (i = 1; i <= 50; i++) {
+for (let i = 1; i <= 50; i++) {
     if (i % 3 === 0 && i % 5 === 0) {
         console.log( "FizzBuzz");
     } else if (i % 3 === 0) {
