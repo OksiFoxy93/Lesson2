@@ -46,14 +46,13 @@ alert(sum);
 
 // 6
 let random;
-for (let i = 0; true ; i++) {
+for (let i = 1; true ; i++) {
     random = Math.random();
     if (random > 0.9) {
         alert(random);
         alert(i);
         break;
     }
-
 }
 
 
@@ -65,18 +64,12 @@ for (let i = 1; i <= 10; i++) {
 }
 
 
-// 8 (тут ничего не работает, но это то, что я пыталась сделать)
-// for (i = 2; i < 10 && i >= 0; i = (i - 1) + (i - 2)) {
-//     console.log(i);
-// }
-//
-// let n = 1200;
-// const a = (1 + 5 ** 0.5) / 2;
-// const b = (1 - 5 ** 0.5) / 2;
-// (a ** n  - b ** n) / 5 ** 0.5;
-// for (i = 0; i < n && i >= 0; i = (( a ** i - b ** i) / 5 ** 0.5)) {
-//     console.log(i);
-// }
+// 8
+let first;
+let second;
+for (first = 0, second = 1; first < 10000 ; first = first + second, second = first + second ) {
+    console.log(first, second);
+}
 
 
 // 9
